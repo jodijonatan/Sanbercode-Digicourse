@@ -18,3 +18,11 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [DashboardController::class, 'index']);
 Route::get('/register', [AuthController::class, 'register']);
 Route::post('/welcome', [AuthController::class, 'welcome']);
+
+Route::get('/data-tables', function(){
+    return view('pages.data-tables');
+});
+
+Route::get('/table', function(){
+    return view('pages.table');
+});
